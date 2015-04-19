@@ -1,0 +1,9 @@
+# Sass
+*.sass-cache
+
+# Temp files
+*.tmp
+*.swp
+
+# Bower
+bower_components
