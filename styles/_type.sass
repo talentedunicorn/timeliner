@@ -1,0 +1,66 @@
+/* Type scale */
+h1,.h1
+	font-size: 3rem
+
+h2,.h2
+	font-size: 2rem
+
+h3,.h3
+	font-size: 1.5rem
+
+h4,.h4
+	font-size: 1rem
+
+h5,.h5,
+.small
+	font-size: .85rem
+
+
+/* Font weight */
+.fn
+	font-weight: normal
+
+.fb
+	font-weight: bold
+
+/* Font family */
+
+.fprimary
+	font-family: $fontRoboto
+
+.fsecondary
+	font-family: $fontArvo
+
+body
+	@extend .fprimary
+
+/* Alignment */
+.tc
+	text-align: center
+
+.tl
+	text-align: left
+
+.tr
+	text-align: right
+
+.tj
+	text-align: justify
+
+/* Text transform */
+.tup
+	text-transform: uppercase
+
+.tlw
+	text-transform: lowercase
+
+
+.subheader
+	color: lighten($color, 50%)
+
+a
+	color: $colorLink
+	text-decoration: none
+
+	&:hover
+		text-decoration: underline

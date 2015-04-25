@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after
+	box-sizing: border-box
+
+body
+	background-color: $white
+	color: $black
+
+.container
+	+container
+
+.footer
+	+container
+	margin-top: 2rem
+	padding-top: 3rem
+	padding-bottom: 6rem
+	background-color: lighten($black, 20%)
+	color: $white

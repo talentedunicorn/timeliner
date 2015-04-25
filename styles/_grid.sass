@@ -1,0 +1,58 @@
+// =====
+// Grid
+// =====
+
+$gutterSize: 20px
+
+// - grid maker
+@mixin make-grid($cols, $padding: false)
+	width: 100%
+	
+	// For even columns break less on medium screen
+	@if $cols % 2 == 0
+		+media-query(medium-only)
+			width: percentage(1/$cols * 2)
+
+	// large screen split into columns
+	+media-query(wide)
+		width: percentage(1/$cols)
+
+	float: left
+	@if $padding
+		padding: $gutterSize
+	@else
+		padding: 0
+
+.grid
+	display: block
+	width: 100%
+	+clearfix
+
+	.col-full
+		+make-grid(1)
+	
+	.col-full-pad
+		+make-grid(1, true)
+
+	.col-2
+		+make-grid(2)
+
+	.col-2-pad
+		+make-grid(2, true)
+
+	.col-3
+		+make-grid(3)
+
+	.col-3-pad
+		+make-grid(3, true)
+
+	.col-4
+		+make-grid(4)
+
+	.col-4-pad
+		+make-grid(4, true)
+
+	.col-centered
+		float: none
+		margin-right: auto
+		margin-left: auto
