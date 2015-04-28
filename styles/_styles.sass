@@ -6,9 +6,28 @@
 
 .header
 	width: 100%
+	padding-top: 3em
+	padding-bottom: 3em
 	background-color: $darkBlue
 	color: $white
+	text-align: center
 	+clearfix
+	
+	.logo
+		color: $white
+		
+		&:hover
+			text-decoration: none
+
++media-query(wide)
+	.header
+		text-align: left
+
+		.logo,
+		.tagline
+			display: inline-block
+			margin-right: 1em
+		
 
 .footer
 	+container
