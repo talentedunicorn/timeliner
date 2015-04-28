@@ -499,12 +499,26 @@ body {
  * ++++++++ */
 .header {
   width: 100%;
+  padding-top: 3em;
+  padding-bottom: 3em;
   background-color: #3B5973;
   color: #ffffff;
+  text-align: center;
   content: "";
   display: table;
   clear: both; }
+  .header .logo {
+    color: #ffffff; }
+    .header .logo:hover {
+      text-decoration: none; }
 
+@media only screen and (min-width: 800px) {
+  .header {
+    text-align: left; }
+    .header .logo,
+    .header .tagline {
+      display: inline-block;
+      margin-right: 1em; } }
 .footer {
   padding-left: 5%;
   padding-right: 5%;
